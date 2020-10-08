@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9857D997-1525-4CAA-9C20-13C70E5934D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.CrossPlatformDesktop", "src\platforms\Synergy.VirusPrototype.CrossPlatformDesktop\Synergy.VirusPrototype.CrossPlatformDesktop.csproj", "{F3F3F45B-D47B-4DA2-B0E2-9A82EB75B51E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "platforms", "platforms", "{5A873DA8-B14B-4EB3-91DE-1253CE92F097}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Infrastructure", "src\Synergy.VirusPrototype.Infrastructure\Synergy.VirusPrototype.Infrastructure.csproj", "{186BC07F-EC5F-422B-9DFE-849971EE5A0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{C45DBFED-B4B3-4344-ACCB-DFF661A790C8}"
+	ProjectSection(SolutionItems) = preProject
+		solution-items\ProjectReferencesDiagram.dgml = solution-items\ProjectReferencesDiagram.dgml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Services", "src\Synergy.VirusPrototype.Services\Synergy.VirusPrototype.Services.csproj", "{7EFF3ECB-2882-4710-AD9A-439A4C49A64F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synergy.VirusPrototype.Android", "src\platforms\Synergy.VirusPrototype.Android\Synergy.VirusPrototype.Android.csproj", "{74760C91-D043-4D1F-93BE-A56E72E85A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synergy.VirusPrototype.Shared", "src\Synergy.VirusPrototype.Shared\Synergy.VirusPrototype.Shared.csproj", "{4812E814-547B-4276-8DE9-3A213889E20D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3F3F45B-D47B-4DA2-B0E2-9A82EB75B51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F3F45B-D47B-4DA2-B0E2-9A82EB75B51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F3F45B-D47B-4DA2-B0E2-9A82EB75B51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F3F45B-D47B-4DA2-B0E2-9A82EB75B51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{186BC07F-EC5F-422B-9DFE-849971EE5A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186BC07F-EC5F-422B-9DFE-849971EE5A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{186BC07F-EC5F-422B-9DFE-849971EE5A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186BC07F-EC5F-422B-9DFE-849971EE5A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFF3ECB-2882-4710-AD9A-439A4C49A64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFF3ECB-2882-4710-AD9A-439A4C49A64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFF3ECB-2882-4710-AD9A-439A4C49A64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFF3ECB-2882-4710-AD9A-439A4C49A64F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74760C91-D043-4D1F-93BE-A56E72E85A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74760C91-D043-4D1F-93BE-A56E72E85A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74760C91-D043-4D1F-93BE-A56E72E85A2D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{74760C91-D043-4D1F-93BE-A56E72E85A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74760C91-D043-4D1F-93BE-A56E72E85A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74760C91-D043-4D1F-93BE-A56E72E85A2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4812E814-547B-4276-8DE9-3A213889E20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4812E814-547B-4276-8DE9-3A213889E20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4812E814-547B-4276-8DE9-3A213889E20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4812E814-547B-4276-8DE9-3A213889E20D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3F3F45B-D47B-4DA2-B0E2-9A82EB75B51E} = {5A873DA8-B14B-4EB3-91DE-1253CE92F097}
+		{5A873DA8-B14B-4EB3-91DE-1253CE92F097} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
+		{186BC07F-EC5F-422B-9DFE-849971EE5A0B} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
+		{7EFF3ECB-2882-4710-AD9A-439A4C49A64F} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
+		{74760C91-D043-4D1F-93BE-A56E72E85A2D} = {5A873DA8-B14B-4EB3-91DE-1253CE92F097}
+		{4812E814-547B-4276-8DE9-3A213889E20D} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {952CF23A-306F-4B52-A0EF-56DB90898579}
+	EndGlobalSection
+EndGlobal
