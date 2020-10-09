@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  CrossPlatformProject: 'src\platforms\Synergy.VirusPrototype.CrossPlatformDesktop\Synergy.VirusPrototype.CrossPlatformDesktop.csproj'
+  CrossPlatformProject: '**/src/platforms/Synergy.VirusPrototype.CrossPlatformDesktop/Synergy.VirusPrototype.CrossPlatformDesktop.csproj'
 
 jobs:
   build:
