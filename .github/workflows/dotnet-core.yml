@@ -8,6 +8,7 @@ on:
 
 env:
   CrossPlatformProject: 'src/platforms/Synergy.VirusPrototype.CrossPlatformDesktop/Synergy.VirusPrototype.CrossPlatformDesktop.csproj'
+  SharedUnitTestProject: 'src/test/Synergy.VirusPrototype.Shared.Tests.Unit/Synergy.VirusPrototype.Shared.Tests.Unit.csproj'
 
 jobs:
   build:
@@ -25,4 +26,4 @@ jobs:
     - name: Build
       run: dotnet build ${{env.CrossPlatformProject}} --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test ${{env.SharedUnitTestProject}} --no-restore --verbosity normal
