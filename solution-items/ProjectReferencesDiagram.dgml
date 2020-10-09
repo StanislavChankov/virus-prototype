@@ -4,14 +4,14 @@
     <Node Id="Synergy.VirusPrototype.Android" Bounds="-328.223333333333,-204.500099998654,188.556666666667,25.96" UseManualLocation="True" />
     <Node Id="Synergy.VirusPrototype.CrossPlatformDesktop" Bounds="-742.226674397787,-213.54,263.596666666667,25.96" UseManualLocation="True" />
     <Node Id="Synergy.VirusPrototype.Infrastructure" Bounds="-729.255006408692,-518.000004272461,216.776666666667,25.96" UseManualLocation="True" />
-    <Node Id="Synergy.VirusPrototype.Services" Bounds="-477.946670532227,-652.770049999327,188.173333333333,25.96" UseManualLocation="True" />
+    <Node Id="Synergy.VirusPrototype.Services" Bounds="-489.946670532227,-762.770049999327,188.173333333333,25.96" UseManualLocation="True" />
     <Node Id="Synergy.VirusPrototype.Shared" Bounds="-480.478339742025,-422.270054321289,182.57,25.96" UseManualLocation="True" />
   </Nodes>
   <Links>
-    <Link Source="Synergy.VirusPrototype.Android" Target="Synergy.VirusPrototype.Shared" Bounds="-374.715473111316,-388.981655379108,131.517022547411,184.481555380454" />
-    <Link Source="Synergy.VirusPrototype.CrossPlatformDesktop" Target="Synergy.VirusPrototype.Shared" Bounds="-596.67071392386,-390.133791917509,187.173462599745,176.593791917509" />
-    <Link Source="Synergy.VirusPrototype.Shared" Target="Synergy.VirusPrototype.Infrastructure" Bounds="-581.13627919963,-488.602973069853,160.530406876242,66.3329187485641" />
-    <Link Source="Synergy.VirusPrototype.Shared" Target="Synergy.VirusPrototype.Services" Bounds="-388.893010913223,-617.812447278762,4.52448946046928,195.542392957473" />
+    <Link Source="Synergy.VirusPrototype.Android" Target="Synergy.VirusPrototype.Shared" Bounds="-374.715469095448,-388.98165530953,131.517018792262,184.481555310876" />
+    <Link Source="Synergy.VirusPrototype.CrossPlatformDesktop" Target="Synergy.VirusPrototype.Shared" Bounds="-596.670713651848,-390.133791982115,187.173466368954,176.593791982115" />
+    <Link Source="Synergy.VirusPrototype.Shared" Target="Synergy.VirusPrototype.Infrastructure" Bounds="-581.136282341819,-488.602973180713,160.530413206427,66.3329188594236" />
+    <Link Source="Synergy.VirusPrototype.Shared" Target="Synergy.VirusPrototype.Services" Bounds="-395.42970147584,-727.811763598222,5.9822252873895,305.541709276932" />
   </Links>
   <Properties>
     <Property Id="Bounds" DataType="System.Windows.Rect" />

@@ -2,15 +2,15 @@
 
 namespace Synergy.VirusPrototype.CrossPlatformDesktop
 {
-    public static class Program
-    {
-        //[STAThread]
-        static void Main()
-        {
-            using (var game = new VirusPrototypeGame())
-            {
-                game.Run();
-            }
-        }
-    }
+	public static class Program
+	{
+		//[STAThread]
+		private static void Main()
+		{
+			using (var game = new VirusPrototypeGame())
+			{
+				game.Run();
+			}
+		}
+	}
 }

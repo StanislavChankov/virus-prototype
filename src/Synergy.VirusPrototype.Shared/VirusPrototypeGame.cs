@@ -4,49 +4,52 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Synergy.VirusPrototype.Shared
 {
-    public class VirusPrototypeGame : Game
-    {
-        private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+	public class VirusPrototypeGame : Game
+	{
+		private readonly GraphicsDeviceManager _graphics;
+		private SpriteBatch _spriteBatch;
 
-        public VirusPrototypeGame()
-        {
-            _graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
-            IsMouseVisible = true;
-        }
+		public VirusPrototypeGame()
+		{
+			_graphics = new GraphicsDeviceManager(this);
 
-        protected override void Initialize()
-        {
-            // TODO: Add your initialization logic here
+		}
 
-            base.Initialize();
-        }
+		protected override void Initialize()
+		{
+			// TODO: Add your initialization logic here
+			Content.RootDirectory = "Content";
+			IsMouseVisible = true;
 
-        protected override void LoadContent()
-        {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+			base.Initialize();
+		}
 
-            // TODO: use this.Content to load your game content here
-        }
+		protected override void LoadContent()
+		{
+			_spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        protected override void Update(GameTime gameTime)
-        {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+			// TODO: use this.Content to load your game content here
+		}
 
-            // TODO: Add your update logic here
+		protected override void Update(GameTime gameTime)
+		{
+			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+			{
+				Exit();
+			}
 
-            base.Update(gameTime);
-        }
+			// TODO: Add your update logic here
 
-        protected override void Draw(GameTime gameTime)
-        {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+			base.Update(gameTime);
+		}
 
-            // TODO: Add your drawing code here
+		protected override void Draw(GameTime gameTime)
+		{
+			GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            base.Draw(gameTime);
-        }
-    }
+			// TODO: Add your drawing code here
+
+			base.Draw(gameTime);
+		}
+	}
 }

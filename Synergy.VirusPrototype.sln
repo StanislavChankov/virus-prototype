@@ -11,16 +11,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "platforms", "platforms", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Infrastructure", "src\Synergy.VirusPrototype.Infrastructure\Synergy.VirusPrototype.Infrastructure.csproj", "{186BC07F-EC5F-422B-9DFE-849971EE5A0B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{C45DBFED-B4B3-4344-ACCB-DFF661A790C8}"
-	ProjectSection(SolutionItems) = preProject
-		solution-items\ProjectReferencesDiagram.dgml = solution-items\ProjectReferencesDiagram.dgml
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Services", "src\Synergy.VirusPrototype.Services\Synergy.VirusPrototype.Services.csproj", "{7EFF3ECB-2882-4710-AD9A-439A4C49A64F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synergy.VirusPrototype.Android", "src\platforms\Synergy.VirusPrototype.Android\Synergy.VirusPrototype.Android.csproj", "{74760C91-D043-4D1F-93BE-A56E72E85A2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synergy.VirusPrototype.Shared", "src\Synergy.VirusPrototype.Shared\Synergy.VirusPrototype.Shared.csproj", "{4812E814-547B-4276-8DE9-3A213889E20D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Shared", "src\Synergy.VirusPrototype.Shared\Synergy.VirusPrototype.Shared.csproj", "{4812E814-547B-4276-8DE9-3A213889E20D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5FC137C-6935-4DF4-8A88-98C2DFDFFE93}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		code-analysis\synergy-ca.ruleset = code-analysis\synergy-ca.ruleset
+		code-analysis\synergy.json = code-analysis\synergy.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

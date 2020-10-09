@@ -9,4 +9,22 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\code-analysis\synergy.json" Link="stylecop.json">
+      <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </AdditionalFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\code-analysis\synergy.json" Link="stylecop.json">
+      <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </AdditionalFiles>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Synergy.VirusPrototype.Services\Synergy.VirusPrototype.Services.csproj" />
+  </ItemGroup>
+
 </Project>
