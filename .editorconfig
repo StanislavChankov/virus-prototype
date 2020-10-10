@@ -717,7 +717,7 @@ dotnet_diagnostic.S2302.severity = error
 dotnet_diagnostic.S2306.severity = error
 
 # S2325: Methods and properties that don't access instance data should be static
-dotnet_diagnostic.S2325.severity = error
+dotnet_diagnostic.S2325.severity = none
 
 # S2326: Unused type parameters should be removed
 dotnet_diagnostic.S2326.severity = error
@@ -1453,3 +1453,6 @@ dotnet_diagnostic.S907.severity = error
 
 # S927: parameter names should match base declaration and other partial definitions
 dotnet_diagnostic.S927.severity = warning
+
+# SA1516: Elements should be separated by blank line
+dotnet_diagnostic.SA1516.severity = error

@@ -7,6 +7,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.8" />
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
@@ -33,12 +37,16 @@
   </ItemGroup>
   
   <ItemGroup>
+    <ProjectReference Include="..\Synergy.VirusPrototype.Infrastructure\Synergy.VirusPrototype.Infrastructure.csproj" />
+    <ProjectReference Include="..\Synergy.VirusPrototype.Resources\Synergy.VirusPrototype.Resources.csproj" />
     <ProjectReference Include="..\Synergy.VirusPrototype.Services\Synergy.VirusPrototype.Services.csproj" />
   </ItemGroup>
   
   <ItemGroup>
     <Folder Include="Content\Audio\" />
     <Folder Include="Content\Fonts\" />
+    <Folder Include="Pages\Abstract\" />
+    <Folder Include="Pages\Game\" />
   </ItemGroup>
 
 </Project>

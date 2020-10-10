@@ -2,10 +2,12 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Synergy.VirusPrototype.Shared.Infrastructure;
+using Synergy.VirusPrototype.Shared.Navigation;
 
 namespace Synergy.VirusPrototype.Shared
 {
-	public class VirusPrototypeGame : Game
+	public class GameStartup : Game
 	{
 		private readonly GraphicsDeviceManager _graphics;
 		private SpriteBatch _spriteBatch;
@@ -22,7 +24,7 @@ namespace Synergy.VirusPrototype.Shared
 
 		private SpriteSheet spriteSheet;
 
-		public VirusPrototypeGame()
+		public GameStartup()
 		{
 			_graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
@@ -33,7 +35,11 @@ namespace Synergy.VirusPrototype.Shared
 			// TODO: Add your initialization logic here
 			IsMouseVisible = true;
 
-			spriteSheet = new SpriteSheet("2d\\SmallKnightRun", 176, 212, 10, 10, true);
+			var container = new IocContainer();
+
+			// spriteSheet = new SpriteSheet("2d\\SmallKnightRun", 176, 212, 10, 10, true);
+
+			new PageNavigator();
 
 			base.Initialize();
 		}
@@ -48,7 +54,7 @@ namespace Synergy.VirusPrototype.Shared
 
 			// (0, 0) is the top-left corner
 			_position = new Vector2(0, 0);
-			spriteSheet.LoadContent(Content, GraphicsDevice);
+			// spriteSheet.LoadContent(Content, GraphicsDevice);
 			// TODO: use this.Content to load your game content here
 		}
 
@@ -59,10 +65,10 @@ namespace Synergy.VirusPrototype.Shared
 				Exit();
 			}
 
-			if (gameTime.TotalGameTime.TotalSeconds > 5)
-			{
-				spriteSheet.Update(gameTime);
-			}
+			//if (gameTime.TotalGameTime.TotalSeconds > 5)
+			//{
+			//	spriteSheet.Update(gameTime);
+			//}
 
 			base.Update(gameTime);
 
@@ -79,7 +85,7 @@ namespace Synergy.VirusPrototype.Shared
 			_spriteBatch.Begin();
 
 			// TODO: Add your drawing code here
-			_spriteBatch.Draw(spriteSheet.CurrentFrame, Vector2.Zero, Color.White);
+			// _spriteBatch.Draw(spriteSheet.CurrentFrame, Vector2.Zero, Color.White);
 			_spriteBatch.End();
 
 			base.Draw(gameTime);
