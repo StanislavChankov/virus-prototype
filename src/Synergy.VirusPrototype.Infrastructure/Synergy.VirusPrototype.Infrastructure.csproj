@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup Label="Analyzers">
+    <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

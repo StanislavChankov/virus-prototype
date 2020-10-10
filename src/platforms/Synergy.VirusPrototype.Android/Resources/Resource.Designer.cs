@@ -46,6 +46,9 @@ namespace Synergy.VirusPrototype.Android
 			// aapt resource value: 0x7F010000
 			public const int Icon = 2130771968;
 			
+			// aapt resource value: 0x7F010001
+			public const int synergy = 2130771969;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

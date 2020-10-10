@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Synergy.VirusPrototype.Android.Synergy.VirusPrototype.Android" android:versionCode="1" android:versionName="1.0">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-  <application android:label="Synergy.VirusPrototype.Android"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Synergy.VirusPrototype.Android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<application android:label="Virus Prototype" android:icon="@drawable/synergy"></application>
 </manifest>
