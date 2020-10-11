@@ -9,6 +9,11 @@ namespace Synergy.VirusPrototype.CrossPlatformDesktop
 		private static async Task Main(string[] args)
 		{
 			await SharedProgram.Main(args);
+
+			using (var game = SharedProgram.Game)
+			{
+				game.Run();
+			}
 		}
 	}
 }
