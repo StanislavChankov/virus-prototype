@@ -1,9 +1,9 @@
-﻿using Synergy.VirusPrototype.Shared.Pages.Enums;
+﻿using Synergy.VirusPrototype.Shared.Scenes.Enums;
 
 namespace Synergy.VirusPrototype.Shared.States
 {
 	public class GlobalState
 	{
-		public PageType CurrentPage { get; }
+		public SceneType CurrentPage { get; }
 	}
 }

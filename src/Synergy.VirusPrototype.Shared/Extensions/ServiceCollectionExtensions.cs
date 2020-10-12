@@ -1,16 +1,16 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Synergy.VirusPrototype.Shared.Options;
-using Synergy.VirusPrototype.Shared.Pages.Enums;
+using Synergy.VirusPrototype.Shared.Scenes.Enums;
 
 namespace Synergy.VirusPrototype.Shared.Registrars
 {
-	public static class OptionsRegistrar
+	public static class ServiceCollectionExtensions
 	{
 		public static void RegisterOptions(this IServiceCollection services)
 		{
 			services.Configure<PageOptions>(opt =>
 			{
-				opt.StartupPageType = PageType.Menu;
+				opt.StartupSceneType = SceneType.Menu;
 			});
 		}
 	}

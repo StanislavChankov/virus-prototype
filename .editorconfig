@@ -240,7 +240,7 @@ dotnet_diagnostic.CA1415.severity = warning
 dotnet_diagnostic.CA1707.severity = warning
 dotnet_diagnostic.CA1821.severity = warning
 # CA1822: Mark members as static
-dotnet_diagnostic.CA1822.severity = warning
+dotnet_diagnostic.CA1822.severity = None
 # CA1829: Use the 'Count' property instead of Enumerable.Count()
 dotnet_diagnostic.CA1829.severity = warning
 dotnet_diagnostic.CA1900.severity = warning

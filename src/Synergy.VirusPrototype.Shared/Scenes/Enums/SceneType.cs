@@ -1,9 +1,9 @@
-﻿namespace Synergy.VirusPrototype.Shared.Pages.Enums
+﻿namespace Synergy.VirusPrototype.Shared.Scenes.Enums
 {
 	/// <summary>
 	/// Enum containing page type options that the user can navigate to.
 	/// </summary>
-	public enum PageType
+	public enum SceneType
 	{
 		Undefined = 0,
 

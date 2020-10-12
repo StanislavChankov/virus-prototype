@@ -1,9 +1,9 @@
-﻿using Synergy.VirusPrototype.Shared.Pages.Enums;
+﻿using Synergy.VirusPrototype.Shared.Scenes.Enums;
 
 namespace Synergy.VirusPrototype.Shared.Options
 {
 	public class PageOptions
 	{
-		public PageType StartupPageType { get; set; }
+		public SceneType StartupSceneType { get; set; }
 	}
 }

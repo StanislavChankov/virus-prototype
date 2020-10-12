@@ -5,6 +5,13 @@
     <CodeAnalysisRuleSet>..\..\code-analysis\synergy-ca.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
+  <ItemGroup Label="NuGet packages">
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.8" />
+  </ItemGroup>
+  
   <ItemGroup Label="Analyzers">
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
