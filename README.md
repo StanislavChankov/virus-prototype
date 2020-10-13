@@ -13,3 +13,12 @@ https://www.gameart2d.com/the-knight-free-sprites.html
 3. Open Visual Studio and update the properties of the files.
 3.1. `Build Action`: `Content`
 3.2 `Copy to output diretory`: `Copy if newer`
+
+## Design Patterns, practices, etc. to implement
+1. [ ] Model-View-Update.
+2. [x] Dependency Injection.
+3. [x] Shared configurations between platforms in one `appsettings.json`.
+4. [ ] Support multiple environments.
+5. [ ] Setup test project with example tests for the Shared project.
+6. [ ] Add code coverage report from CodeCov.
+7. [x] Setup Continuous Integration with Github Actions.
