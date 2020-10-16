@@ -37,13 +37,13 @@ namespace Synergy.VirusPrototype.Shared.Infrastructure
 
 			Stream jsonStream = currentAssembly.GetManifestResourceStream($"{CurrentAssemblyName}.appsettings.json");
 
-			using var reader = new StreamReader(jsonStream);
+			using StreamReader? reader = new StreamReader(jsonStream);
 
 			string json = reader.ReadToEnd();
 
-			using var stream = new MemoryStream(Encoding.ASCII.GetBytes(json));
+			using MemoryStream? stream = new MemoryStream(Encoding.ASCII.GetBytes(json));
 
-			var configuration = new ConfigurationBuilder()
+			IConfigurationRoot? configuration = new ConfigurationBuilder()
 				.AddJsonStream(stream)
 				.Build();
 
@@ -54,7 +54,7 @@ namespace Synergy.VirusPrototype.Shared.Infrastructure
 		{
 			string codeBase = Assembly.Load(assemblyName).CodeBase;
 
-			var uri = new UriBuilder(new Uri(codeBase));
+			UriBuilder? uri = new UriBuilder(new Uri(codeBase));
 
 			string path = Uri.UnescapeDataString(uri.Path);
 

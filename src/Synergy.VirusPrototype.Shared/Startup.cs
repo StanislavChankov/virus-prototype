@@ -2,6 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 using Synergy.VirusPrototype.Shared.Extensions;
 using Synergy.VirusPrototype.Shared.Infrastructure;
 using Synergy.VirusPrototype.Shared.Navigation;
@@ -29,8 +31,12 @@ namespace Synergy.VirusPrototype.Shared
 			services.RegisterMvvm();
 			services.RegisterOptions();
 
-			services.AddTransient<Game, GameStartup>();
-			services.AddTransient<ISceneNavigator, SceneNavigator>();
+			services.AddSingleton<Game, GameStartup>();
+			services.AddScoped<ISceneNavigator, SceneNavigator>();
+
+			services.AddScoped<SpriteBatch>(provider => new SpriteBatch(((GameStartup)provider.GetRequiredService<Game>()).GraphicsDevice));
+			services.AddScoped<ContentManager>(provider => provider.GetRequiredService<Game>().Content);
+			services.AddScoped<GraphicsDevice>(provider => provider.GetRequiredService<Game>().GraphicsDevice);
 		}
 	}
 }

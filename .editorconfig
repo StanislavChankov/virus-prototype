@@ -206,7 +206,7 @@ dotnet_sort_system_directives_first = true
 
 
 # Default severity for all analyzer diagnostics
-#dotnet_analyzer_diagnostic.severity = warning
+dotnet_analyzer_diagnostic.severity = none
 
 
 
@@ -290,6 +290,9 @@ dotnet_diagnostic.CA2240.severity = warning
 dotnet_diagnostic.CA2241.severity = warning
 dotnet_diagnostic.CA2242.severity = warning
 
+# CA2000: Dispose objects before losing scope
+dotnet_diagnostic.CA2000.severity = error
+
 #### SAxxxx ####
 
 # SA0001:
@@ -327,6 +330,9 @@ dotnet_diagnostic.SA1309.severity = none
 
 # SA1310:
 dotnet_diagnostic.SA1310.severity = none
+
+# SA1312:
+dotnet_diagnostic.SA1312.severity = error
 
 # SA1413: use triling comma in multi-line initializers
 dotnet_diagnostic.SA1413.severity = warning

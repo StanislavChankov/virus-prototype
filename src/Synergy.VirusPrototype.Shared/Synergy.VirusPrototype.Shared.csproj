@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="appsettings.json" />
     <None Remove="Content\2d\SmallKnightRun.xnb" />
+    <None Remove="Content\Fonts\gameFont.xnb" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,9 @@
     <Content Include="Content\2d\SmallKnightRun.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Fonts\gameFont.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   
   <ItemGroup>
@@ -47,8 +51,8 @@
   
   <ItemGroup>
     <Folder Include="Content\Audio\" />
-    <Folder Include="Content\Fonts\" />
     <Folder Include="Features\" />
+    <Folder Include="Properties\" />
     <Folder Include="Scenes\Abstract\" />
     <Folder Include="Scenes\Game\" />
   </ItemGroup>
