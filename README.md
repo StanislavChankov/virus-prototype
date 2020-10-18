@@ -1,4 +1,4 @@
-# virus-prototype
+# Virus Prototype
 Very simple game built with MonoGame.
 
 ## Build Status
@@ -22,4 +22,4 @@ https://www.gameart2d.com/the-knight-free-sprites.html
 5. [ ] Setup test project with example tests for the Shared project.
 6. [ ] Add code coverage report from CodeCov.
 7. [x] Setup Continuous Integration with Github Actions.
-8. [] Usage of MediatR.
+8. [ ] Add usage of MediatR.
