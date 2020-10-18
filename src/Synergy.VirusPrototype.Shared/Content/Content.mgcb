@@ -13,4 +13,15 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Fonts/gameFont.xnb
+/importer:
+/processor:
+/build:Fonts/gameFont.xnb
+
+#begin Fonts/Sprocket.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Sprocket.spritefont
 

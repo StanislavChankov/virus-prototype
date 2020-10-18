@@ -9,6 +9,10 @@ using Synergy.VirusPrototype.Shared.Infrastructure;
 using Synergy.VirusPrototype.Shared.Navigation;
 using Synergy.VirusPrototype.Shared.Navigation.Abstract;
 using Synergy.VirusPrototype.Shared.Registrars;
+using Synergy.VirusPrototype.Shared.Scenes;
+using Synergy.VirusPrototype.Shared.Scenes.Abstract;
+using Synergy.VirusPrototype.Shared.Scenes.Game;
+using Synergy.VirusPrototype.Shared.Scenes.Menu;
 
 namespace Synergy.VirusPrototype.Shared
 {
@@ -32,11 +36,16 @@ namespace Synergy.VirusPrototype.Shared
 			services.RegisterOptions();
 
 			services.AddSingleton<Game, GameStartup>();
-			services.AddScoped<ISceneNavigator, SceneNavigator>();
 
 			services.AddScoped<SpriteBatch>(provider => new SpriteBatch(((GameStartup)provider.GetRequiredService<Game>()).GraphicsDevice));
 			services.AddScoped<ContentManager>(provider => provider.GetRequiredService<Game>().Content);
 			services.AddScoped<GraphicsDevice>(provider => provider.GetRequiredService<Game>().GraphicsDevice);
+
+			// Scenes
+			services.AddScoped<ISceneNavigator, SceneNavigator>();
+			services.AddScoped<ISceneTypeSceneMappingProvider, SceneTypeSceneMappingProvider>();
+			services.AddScoped<IGameScene, GameScene>();
+			services.AddScoped<IMenuScene, MenuScene>();
 		}
 	}
 }

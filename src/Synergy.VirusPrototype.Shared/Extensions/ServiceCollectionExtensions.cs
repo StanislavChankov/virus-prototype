@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Synergy.VirusPrototype.Domain.Models.Nomenclatures;
 using Synergy.VirusPrototype.Shared.Options;
-using Synergy.VirusPrototype.Shared.Scenes.Enums;
 
 namespace Synergy.VirusPrototype.Shared.Registrars
 {

@@ -3,25 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <CodeAnalysisRuleSet>..\..\code-analysis\synergy-ca.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup Label="Analyzers">
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.13.1.21947">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
   <ItemGroup>
-    <AdditionalFiles Include="..\..\code-analysis\synergy.json" Link="stylecop.json">
-      <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </AdditionalFiles>
+    <ProjectReference Include="..\Synergy.VirusPrototype.Domain.Models\Synergy.VirusPrototype.Domain.Models.csproj" />
   </ItemGroup>
 
 </Project>
