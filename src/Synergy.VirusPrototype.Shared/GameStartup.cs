@@ -11,15 +11,10 @@ namespace Synergy.VirusPrototype.Shared
 {
 	public class GameStartup : Game
 	{
-		private const int FrameWidth = 176;
-		private const int FrameHeight = 212;
-		private const int FramesInX = 10;
-		private const int TotalFrames = 10;
-		private readonly GraphicsDeviceManager _graphics;
 		private readonly IServiceProvider _serviceProvider;
+		private readonly GraphicsDeviceManager _graphics;
 		private ISceneNavigator sceneNavigator;
 		private bool _drawn;
-		private SpriteSheet spriteSheet;
 
 		public GameStartup(
 			IOptions<PageOptions> options,
@@ -34,8 +29,6 @@ namespace Synergy.VirusPrototype.Shared
 		{
 			IsMouseVisible = true;
 
-			spriteSheet = new SpriteSheet("2d\\SmallKnightRun", FrameWidth, FrameHeight, FramesInX, TotalFrames, true);
-
 			base.Initialize();
 		}
 
@@ -43,7 +36,6 @@ namespace Synergy.VirusPrototype.Shared
 		{
 			// Use the content manager to load our texture
 
-			spriteSheet.LoadContent(Content, GraphicsDevice);
 			// TODO: use this.Content to load your game content here
 		}
 

@@ -5,7 +5,12 @@
     <CodeAnalysisRuleSet>..\..\code-analysis\synergy-ca.ruleset</CodeAnalysisRuleSet>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
+    <WarningsAsErrors>CS8600;CS8602;CS8603;CS8620;CS8613;CS8629;CS8625;CS8619;CS8614;CS8604;CS8601;CS8714;CS8653;CS8634</WarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetCore.AutoRegisterDi" Version="2.1.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Synergy.VirusPrototype.Domain.Models\Synergy.VirusPrototype.Domain.Models.csproj" />

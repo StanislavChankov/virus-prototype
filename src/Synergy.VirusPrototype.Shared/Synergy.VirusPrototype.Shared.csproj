@@ -4,24 +4,34 @@
     <CodeAnalysisRuleSet>..\..\code-analysis\synergy-ca.ruleset</CodeAnalysisRuleSet>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
+    <WarningsAsErrors>CS8600;CS8602;CS8603;CS8620;CS8613;CS8629;CS8625;CS8619;CS8614;CS8604;CS8601;CS8714;CS8653;CS8634</WarningsAsErrors>
   </PropertyGroup>
-
   <ItemGroup>
-    <None Remove="appsettings.json" />
-    <None Remove="Content\2d\SmallKnightRun.xnb" />
-    <None Remove="Content\Fonts\gameFont.xnb" />
-    <None Remove="Content\Fonts\Sprocket-BT_42023.ttf" />
-    <None Remove="Content\Fonts\Sprocket.spritefont" />
-    <None Remove="Content\Fonts\Sprocket.xnb" />
+    <None Remove="Content\Fonts\default_font.fnt" />
+    <None Remove="Content\Fonts\OpenSans-Bold.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
   </ItemGroup>
 
+  <ItemGroup Label="Serilog">
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.3" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Synergy.VirusPrototype.Infrastructure\Synergy.VirusPrototype.Infrastructure.csproj" />
+    <ProjectReference Include="..\Synergy.VirusPrototype.Resources\Synergy.VirusPrototype.Resources.csproj" />
+    <ProjectReference Include="..\Synergy.VirusPrototype.Services\Synergy.VirusPrototype.Services.csproj" />
+  </ItemGroup>
+  
   <ItemGroup>
     <AdditionalFiles Include="..\..\code-analysis\synergy.json" Link="stylecop.json">
       <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
@@ -36,25 +46,14 @@
     <Content Include="Content\2d\SmallKnightRun.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Fonts\gameFont.xnb">
+    <Content Include="Content\Fonts\default_font.fnt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Fonts\Sprocket-BT_42023.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Fonts\Sprocket.spritefont">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Fonts\Sprocket.xnb">
+    <Content Include="Content\Fonts\OpenSans-Bold.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\Synergy.VirusPrototype.Infrastructure\Synergy.VirusPrototype.Infrastructure.csproj" />
-    <ProjectReference Include="..\Synergy.VirusPrototype.Resources\Synergy.VirusPrototype.Resources.csproj" />
-    <ProjectReference Include="..\Synergy.VirusPrototype.Services\Synergy.VirusPrototype.Services.csproj" />
-  </ItemGroup>
+ 
   
   <ItemGroup>
     <Folder Include="Content\Audio\" />
