@@ -23,3 +23,4 @@ https://www.gameart2d.com/the-knight-free-sprites.html
 6. [ ] Add code coverage report from CodeCov.
 7. [x] Setup Continuous Integration with Github Actions.
 8. [ ] Add usage of MediatR.
+9. [ ] Component based UI building.
