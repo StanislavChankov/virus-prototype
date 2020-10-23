@@ -24,3 +24,4 @@ https://www.gameart2d.com/the-knight-free-sprites.html
 7. [x] Setup Continuous Integration with Github Actions.
 8. [ ] Add usage of MediatR.
 9. [ ] Component based UI building.
+10. [ ] Builder design pattern.
