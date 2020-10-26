@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Synergy.VirusPrototype.Shared.Controls
+namespace Synergy.VirusPrototype.Core.Controls
 {
 	public class Button
 	{

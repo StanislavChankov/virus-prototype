@@ -547,7 +547,7 @@ dotnet_diagnostic.S127.severity = error
 dotnet_diagnostic.S1301.severity = error
 
 # S1309: Track uses of in-source issue suppressions
-dotnet_diagnostic.S1309.severity = error
+dotnet_diagnostic.S1309.severity = warning
 
 # S131: "switch/Select" statements should contain a "default/Case Else" clauses
 dotnet_diagnostic.S131.severity = error

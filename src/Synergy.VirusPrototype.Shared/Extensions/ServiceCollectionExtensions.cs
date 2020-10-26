@@ -43,7 +43,7 @@ namespace Synergy.VirusPrototype.Shared.Registrars
 		public static void AddServices(this IServiceCollection services)
 		{
 			services.RegisterAssemblyPublicNonGenericClasses(
-				typeof(Startup).Assembly)
+				typeof(IRectangleDrawer).Assembly)
 			.Where(c => c.GetInterfaces().Contains(typeof(IService)))
 			.AsPublicImplementedInterfaces(ServiceLifetime.Scoped);
 		}

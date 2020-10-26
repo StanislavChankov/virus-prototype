@@ -5,6 +5,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Synergy.VirusPrototype.Core.Builders;
+using Synergy.VirusPrototype.Core.Builders.Abstract;
+using Synergy.VirusPrototype.Core.Controls;
 using Synergy.VirusPrototype.Shared.Extensions;
 using Synergy.VirusPrototype.Shared.Infrastructure;
 using Synergy.VirusPrototype.Shared.Navigation;
@@ -48,6 +51,9 @@ namespace Synergy.VirusPrototype.Shared
 			services.AddScoped<ISceneTypeSceneMappingProvider, SceneTypeSceneMappingProvider>();
 			services.AddScoped<IGameScene, GameScene>();
 			services.AddScoped<IMenuScene, MenuScene>();
+			// Builders
+			services.AddScoped<IContentTextureBuilder, ContentTextureBuilder>();
+			services.AddScoped<IGridBuilder, GridBuilder>();
 		}
 	}
 }

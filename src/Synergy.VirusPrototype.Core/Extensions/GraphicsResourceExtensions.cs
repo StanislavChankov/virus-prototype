@@ -5,9 +5,9 @@ namespace Synergy.VirusPrototype.Shared.Extensions
 {
 	public static class GraphicsResourceExtensions
 	{
-		public static Texture2D GetPixel(this GraphicsResource spriteBatch)
+		public static Texture2D GetPixel(this GraphicsResource graphicsResource)
 		{
-			var pixel = new Texture2D(spriteBatch.GraphicsDevice, 1, 1, false, SurfaceFormat.Color);
+			var pixel = new Texture2D(graphicsResource.GraphicsDevice, 1, 1, false, SurfaceFormat.Color);
 
 			pixel.SetData(new[] { Color.White });
 
