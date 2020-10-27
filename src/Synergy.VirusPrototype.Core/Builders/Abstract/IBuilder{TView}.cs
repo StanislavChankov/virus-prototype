@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
+using Synergy.VirusPrototype.Core.Controls.Abstract;
 
 namespace Synergy.VirusPrototype.Core.Builders.Abstract
 {
