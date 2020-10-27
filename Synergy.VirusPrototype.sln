@@ -28,7 +28,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3FFF14D8-E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Shared.Tests.Unit", "test\Synergy.VirusPrototype.Shared.Tests.Unit\Synergy.VirusPrototype.Shared.Tests.Unit.csproj", "{16BE9251-910D-49CE-985B-6255F1F62887}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synergy.VirusPrototype.Resources", "src\Synergy.VirusPrototype.Resources\Synergy.VirusPrototype.Resources.csproj", "{16331A01-BEB5-426E-B81B-22E25110BD14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Resources", "src\Synergy.VirusPrototype.Resources\Synergy.VirusPrototype.Resources.csproj", "{16331A01-BEB5-426E-B81B-22E25110BD14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Domain.Models", "src\Synergy.VirusPrototype.Domain.Models\Synergy.VirusPrototype.Domain.Models.csproj", "{37EFE372-6851-4EB8-BD35-0B6E540AD456}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synergy.VirusPrototype.Core", "src\Synergy.VirusPrototype.Core\Synergy.VirusPrototype.Core.csproj", "{958D2EA6-3BC6-4C41-9804-428126A355C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +70,14 @@ Global
 		{16331A01-BEB5-426E-B81B-22E25110BD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16331A01-BEB5-426E-B81B-22E25110BD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16331A01-BEB5-426E-B81B-22E25110BD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EFE372-6851-4EB8-BD35-0B6E540AD456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EFE372-6851-4EB8-BD35-0B6E540AD456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EFE372-6851-4EB8-BD35-0B6E540AD456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EFE372-6851-4EB8-BD35-0B6E540AD456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958D2EA6-3BC6-4C41-9804-428126A355C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958D2EA6-3BC6-4C41-9804-428126A355C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958D2EA6-3BC6-4C41-9804-428126A355C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958D2EA6-3BC6-4C41-9804-428126A355C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +91,8 @@ Global
 		{4812E814-547B-4276-8DE9-3A213889E20D} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
 		{16BE9251-910D-49CE-985B-6255F1F62887} = {3FFF14D8-E056-4EEA-B793-A9B9CEC58FA0}
 		{16331A01-BEB5-426E-B81B-22E25110BD14} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
+		{37EFE372-6851-4EB8-BD35-0B6E540AD456} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
+		{958D2EA6-3BC6-4C41-9804-428126A355C9} = {9857D997-1525-4CAA-9C20-13C70E5934D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {952CF23A-306F-4B52-A0EF-56DB90898579}

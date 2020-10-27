@@ -1,4 +1,4 @@
-﻿namespace Synergy.VirusPrototype.Shared.Scenes.Enums
+﻿namespace Synergy.VirusPrototype.Domain.Models.Nomenclatures
 {
 	/// <summary>
 	/// Enum containing page type options that the user can navigate to.

@@ -206,7 +206,7 @@ dotnet_sort_system_directives_first = true
 
 
 # Default severity for all analyzer diagnostics
-#dotnet_analyzer_diagnostic.severity = warning
+dotnet_analyzer_diagnostic.severity = none
 
 
 
@@ -217,6 +217,7 @@ dotnet_sort_system_directives_first = true
 dotnet_diagnostic.CA1001.severity = warning
 # CA1008: Enums should have zero value
 dotnet_diagnostic.CA1008.severity = error
+dotnet_diagnostic.CA1717.severity = error
 dotnet_diagnostic.CA1009.severity = warning
 dotnet_diagnostic.CA1012.severity = warning
 dotnet_diagnostic.CA1016.severity = warning
@@ -290,6 +291,9 @@ dotnet_diagnostic.CA2240.severity = warning
 dotnet_diagnostic.CA2241.severity = warning
 dotnet_diagnostic.CA2242.severity = warning
 
+# CA2000: Dispose objects before losing scope
+dotnet_diagnostic.CA2000.severity = error
+
 #### SAxxxx ####
 
 # SA0001:
@@ -328,8 +332,11 @@ dotnet_diagnostic.SA1309.severity = none
 # SA1310:
 dotnet_diagnostic.SA1310.severity = none
 
+# SA1312:
+dotnet_diagnostic.SA1312.severity = error
+
 # SA1413: use triling comma in multi-line initializers
-dotnet_diagnostic.SA1413.severity = warning
+dotnet_diagnostic.SA1413.severity = error
 
 # SA1500:
 dotnet_diagnostic.SA1500.severity = error
@@ -540,7 +547,7 @@ dotnet_diagnostic.S127.severity = error
 dotnet_diagnostic.S1301.severity = error
 
 # S1309: Track uses of in-source issue suppressions
-dotnet_diagnostic.S1309.severity = error
+dotnet_diagnostic.S1309.severity = warning
 
 # S131: "switch/Select" statements should contain a "default/Case Else" clauses
 dotnet_diagnostic.S131.severity = error
@@ -1257,7 +1264,7 @@ dotnet_diagnostic.S4016.severity = error
 dotnet_diagnostic.S4017.severity = error
 
 # S4018: Generic methods should provide type parameters
-dotnet_diagnostic.S4018.severity = error
+dotnet_diagnostic.S4018.severity = warning
 
 # S4019: Base class methods should not be hidden
 dotnet_diagnostic.S4019.severity = error
@@ -1266,7 +1273,7 @@ dotnet_diagnostic.S4019.severity = error
 dotnet_diagnostic.S4022.severity = error
 
 # S4023: Interfaces should not be empty
-dotnet_diagnostic.S4023.severity = error
+dotnet_diagnostic.S4023.severity = suggestion
 
 # S4025: Child class fields should not differ from parent class fields only by capitalization
 dotnet_diagnostic.S4025.severity = error
@@ -1293,7 +1300,7 @@ dotnet_diagnostic.S4041.severity = error
 dotnet_diagnostic.S4047.severity = error
 
 # S4049: Properties should be preferred
-dotnet_diagnostic.S4049.severity = error
+dotnet_diagnostic.S4049.severity = suggestion
 
 # S4050: Operators should be overloaded consistently
 dotnet_diagnostic.S4050.severity = error

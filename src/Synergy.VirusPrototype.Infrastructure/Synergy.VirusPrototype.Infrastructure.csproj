@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <CodeAnalysisRuleSet>..\..\code-analysis\synergy-ca.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>CS8600;CS8602;CS8603;CS8620;CS8613;CS8629;CS8625;CS8619;CS8614;CS8604;CS8601;CS8714;CS8653;CS8634</WarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup Label="NuGet packages">
@@ -11,7 +14,7 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.8" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.8" />
   </ItemGroup>
-  
+
   <ItemGroup Label="Analyzers">
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">

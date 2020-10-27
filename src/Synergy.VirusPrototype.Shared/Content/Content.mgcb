@@ -13,4 +13,82 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin 2d/red-pixel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:2d/red-pixel.png
+
+#begin 2d/SmallKnightRun.xnb
+/importer:
+/processor:
+/build:2d/SmallKnightRun.xnb
+
+#begin Fonts/gameFont.xnb
+/importer:
+/processor:
+/build:Fonts/gameFont.xnb
+
+#begin Fonts/OpenSans-Bold.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-Bold.ttf
+
+#begin Fonts/OpenSans-BoldItalic.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-BoldItalic.ttf
+
+#begin Fonts/OpenSans-ExtraBold.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-ExtraBold.ttf
+
+#begin Fonts/OpenSans-ExtraBoldItalic.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-ExtraBoldItalic.ttf
+
+#begin Fonts/OpenSans-Italic.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-Italic.ttf
+
+#begin Fonts/OpenSans-Light.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-Light.ttf
+
+#begin Fonts/OpenSans-LightItalic.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-LightItalic.ttf
+
+#begin Fonts/OpenSans-Regular.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-Regular.ttf
+
+#begin Fonts/OpenSans-Semibold.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-Semibold.ttf
+
+#begin Fonts/OpenSans-SemiboldItalic.ttf
+/importer:
+/processor:
+/build:Fonts/OpenSans-SemiboldItalic.ttf
+
+#begin Fonts/Sprocket.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Sprocket.spritefont
 

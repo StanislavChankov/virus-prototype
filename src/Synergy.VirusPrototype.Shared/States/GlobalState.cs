@@ -1,4 +1,4 @@
-﻿using Synergy.VirusPrototype.Shared.Scenes.Enums;
+﻿using Synergy.VirusPrototype.Domain.Models.Nomenclatures;
 
 namespace Synergy.VirusPrototype.Shared.States
 {
